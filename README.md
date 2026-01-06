@@ -64,3 +64,16 @@ Before using this code in production, you should:
 - define clear upgrade governance
 - lock or burn upgrade paths where appropriate
 - subject all
+
+
+## Quick start (Foundry)
+
+Install dependencies:
+- OpenZeppelin upgradeable contracts
+
+Commands:
+```bash
+forge init
+forge install OpenZeppelin/openzeppelin-contracts-upgradeable --no-commit
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
+forge test -vvv
