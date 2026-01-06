@@ -1,34 +1,21 @@
-name: Foundry CI
+[profile.default]
+src = "contracts"
+test = "test"
+out = "out"
+libs = ["lib"]
 
-on:
-  push:
-    branches: ["main"]
-  pull_request:
+optimizer = true
+optimizer_runs = 200
+solc_version = "0.8.20"
+evm_version = "paris"
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
+[fuzz]
+runs = 256
 
-    steps:
-      - name: Checkout repository (with submodules)
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
+[fmt]
+line_length = 100
+tab_width = 2
+bracket_spacing = true
 
-      - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@v1
-        with:
-          version: nightly
-
-      - name: Install dependencies
-        run: |
-          forge --version
-          git submodule update --init --recursive || true
-          forge install --no-commit
-
-      - name: Build
-        run: forge build -vvv
-
-      - name: Test
-        run: forge test -vvv
+[profile.ci]
+fuzz = { runs = 128 }
