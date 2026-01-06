@@ -4,8 +4,8 @@ pragma solidity ^0.8.20;
 import "forge-std/Test.sol";
 
 import {ERC1967Proxy} from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
-import {TestHarnessV1} from "../contracts/TestHarnessV1.sol";
-import {TestHarnessV2} from "../contracts/TestHarnessV2.sol";
+import {TestHarnessV1} from "../contracts/harness/TestHarnessV1.sol";
+import {TestHarnessV2} from "../contracts/harness/TestHarnessV2.sol";
 
 contract UUPSBaseTest is Test {
     address admin = address(0xA11CE);
