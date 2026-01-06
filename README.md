@@ -1,3 +1,14 @@
+## Contact
+
+For audits, custom UUPS systems, or security reviews:
+
+📧 Email: contact@your-domain.dev  
+🔐 PGP available on request
+
+Serious inquiries only.
+Smart-contract security & UUPS upgradeability.
+Contact: GlobalInvariantLabs@proton.me
+
 # uups-secure-starter
 
 Audit-ready **UUPS upgradeable Solidity** starter focused on correctness, safety, and long-term maintainability.
