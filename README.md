@@ -2,7 +2,7 @@
 
 For audits, custom UUPS systems, or security reviews:
 
-📧 Email: contact@your-domain.dev  
+📧 Email: GlobalInvariantLabs@proton.me
 🔐 PGP available on request
 
 Serious inquiries only.
